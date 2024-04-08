@@ -4,20 +4,20 @@ window.addEventListener("load", function() {
 	video.autoplay = false; // once loaded
 
 	// buttons
-    const play_button = document.querySelector('#play');
-    const pause_button = document.querySelector('#pause');
+    let play_button = document.querySelector('#play');
+    let pause_button = document.querySelector('#pause');
 
-    const slow_down = document.querySelector('#slower');
-    const faster = document.querySelector('#faster');
+    let slow_down = document.querySelector('#slower');
+    let faster = document.querySelector('#faster');
 	
-    const skip = document.querySelector('#skip');
+    let skip = document.querySelector('#skip');
 	// volume settings
-	const mute = document.querySelector('#mute');
-    const slider = document.querySelector('#slider');
-    const volume = document.querySelector('#volume');
+	let mute = document.querySelector('#mute');
+    let slider = document.querySelector('#slider');
+    let volume = document.querySelector('#volume');
 	// filters
-    const vintage = document.querySelector('#vintage');
-    const orig = document.querySelector('#orig');
+    let vintage = document.querySelector('#vintage');
+    let orig = document.querySelector('#orig');
 
 	
     play_button.addEventListener('click', function() {
