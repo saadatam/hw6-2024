@@ -24,7 +24,7 @@ window.addEventListener("load", function() {
 		// play the video
         video.play();
 		// initialize the volume
-        volume.textContent = video.volume;
+        volume.textContent = video.volume * 100 + "%";
     });
 
     pause_button.addEventListener('click', function() {
@@ -64,7 +64,7 @@ window.addEventListener("load", function() {
     slider.addEventListener('input', function() {
 		// 
         video.volume = slider.value / 100;
-        volume.textContent = video.volume;
+        volume.textContent = video.volume * 100 + "%";
     });
 
     vintage.addEventListener('click', function() {
